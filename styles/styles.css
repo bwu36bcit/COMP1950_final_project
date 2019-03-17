@@ -1,140 +1,110 @@
-@charset "UTF-8";
 /* CSS Document */
-
+/* CSS Document */
 /* Box Sizing Reset */
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 /* Images  - Max-Width Reset */
 img {
-    max-width: 100%;
-    height: auto;
-}
+  max-width: 100%;
+  height: auto; }
 
 body {
-    background-color: #6C6C6C;
-    background-image: url(../images/BCIT-background.jpg);
-    background-repeat: no-repeat;
-	background-position-x: center;
-    margin: 0;
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-}
+  background-color: #6C6C6C;
+  background-image: url(../images/BCIT-background.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin: 0;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; }
 
 h1, h2, h3, h4, h5, nav a {
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-}
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
 
 .wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-
-    height: 100vh; 
-}
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding-top: 10px;
-
-    display: grid;
-    grid-template-columns: repeat(5, minmax(auto, calc(100% / 5)));
-    grid-template-rows: repeat(2, auto);
-
-    align-items: center;
-}
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(auto, calc(100% / 5)));
+  grid-template-rows: repeat(2, auto);
+  align-items: center; }
 
 /* the BCIT logo */
 header a:first-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-
-    padding-left: 1vw;
-}
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding-left: 1vw; }
 
 header h1 {
-    grid-column: 3 / 6;
-    grid-row: 1 / 2;
-
-    justify-self: end;
-
-    line-height: 1;
-    margin: 0 0 20px;
-    padding-right: 1vw;
-}
+  grid-column: 3 / 6;
+  grid-row: 1 / 2;
+  justify-self: end;
+  line-height: 1;
+  margin: 0 0 20px;
+  padding-right: 1vw; }
 
 header nav {
-    grid-column: 1 / 6;
-    grid-row: 2 / 3;
-
-    /* opacity 0.2 here is on top of opacity 0.5 from header */
-    background-color: rgba(0, 0, 0, 0.2);
-}
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  /* opacity 0.2 here is on top of opacity 0.5 from header */
+  background-color: rgba(0, 0, 0, 0.2); }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-}
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; }
 
 nav li {
-    width: calc(100% / 5);
-}
+  width: calc(100% / 5); }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    line-height: 42px;
-    display: block;
-    text-align: center;
-}
+  color: white;
+  text-decoration: none;
+  line-height: 42px;
+  display: block;
+  text-align: center; }
 
 nav li:last-child a {
-    border-right: none;
-}
+  border-right: none; }
 
 nav a:hover,
 nav a:active,
 nav a:focus {
-    background-color: rgba(255, 255, 255, 0.2);
-}
+  background-color: rgba(255, 255, 255, 0.2); }
 
 /* End Responsive Menus */
-
-
 main {
-    flex: 1;
-    padding: 30px 0;
-}
+  flex: 1;
+  padding: 30px 0; }
 
 main article:first-child h2 {
-    margin-top: 0;
-}
+  margin-top: 0; }
 
 main p:last-child {
-    margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 main article {
-    background-color: rgba(255, 255, 255, 0.8); 
-    margin: 20px 0;
-    padding: 0 10px;
-}
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px 0;
+  padding: 0 10px; }
 
 footer {
-    display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  line-height: 1;
+  padding: 0 1vw; }
 
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    line-height: 1;
-
-    padding: 0 1vw;
-}
+/*# sourceMappingURL=styles.css.map */
