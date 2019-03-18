@@ -1,0 +1,15 @@
+.contact-form {
+  margin: auto;
+  width: 70%;
+  padding: 20px;
+  background-color: white;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form textarea {
+  width: 70%;
+  height: 50px;
+}
