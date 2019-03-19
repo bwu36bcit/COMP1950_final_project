@@ -37,6 +37,10 @@ header nav {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+button.menu {
+	display: none;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -49,9 +53,10 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     line-height: 42px;
+    white-space: nowrap;
     display: block;
     text-align: center;
 }
