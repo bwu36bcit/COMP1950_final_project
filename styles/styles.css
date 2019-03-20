@@ -233,5 +233,40 @@ footer {
 
   .show nav {
     height: 210px; } }
+.contact-form {
+  margin: auto;
+  max-width: 70%;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.contact-form h2 {
+  text-align: center; }
+
+.contact-form textarea {
+  width: 100%;
+  height: 100px; }
+
+.schedule-wrapper {
+  margin: auto;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px; }
+
+.schedule-wrapper .day {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px; }
+
+@media only screen and (max-width: 860px) {
+  .schedule-wrapper {
+    max-width: 85%;
+    grid-template-columns: 1fr 1fr; } }
+@media only screen and (max-width: 580px) {
+  .schedule-wrapper {
+    max-width: 90%;
+    grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=styles.css.map */
