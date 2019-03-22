@@ -1,6 +1,7 @@
 .schedule-wrapper {
   margin: auto;
-  max-width: 80%;
+  width:70%;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -13,17 +14,19 @@
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 860px){
+@media only screen and (max-width: 1000px){
   .schedule-wrapper {
-    max-width: 85%;
+    width: 85%;
     grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
   }
 }
 
 
 @media only screen and (max-width: 580px){
   .schedule-wrapper {
-    max-width: 90%;
+	width: 90%;
     grid-template-columns: 1fr;
+	grid-template-rows: auto;
   }
 }
