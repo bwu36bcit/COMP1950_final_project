@@ -18,8 +18,10 @@ img {
 body {
     background-color: #6C6C6C;
     background-image: url(../images/BCIT-background.jpg);
+    // background-repeat: repeat-y;
     background-repeat: no-repeat;
-	background-position-x: center;
+    background-attachment: fixed;
+	  background-position-x: center;
     margin: 0;
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 }
@@ -29,11 +31,6 @@ h1, h2, h3, h4, h5, nav a {
 }
 
 .wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-
-    height: 100vh; 
+  max-width: 1920px;
+  margin: 0 auto; 
 }
