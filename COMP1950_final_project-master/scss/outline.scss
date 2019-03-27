@@ -1,0 +1,33 @@
+.outline-wrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: auto;
+	width: 70%;
+	max-width: 1200px;
+}
+
+.outline-wrapper td {
+	padding: 10px;
+}
+
+.outline-wrapper button {
+	background: none;
+	border: none;
+}
+
+.outline-wrapper button:hover {
+	color: rgb(50,70,200);
+	text-decoration: underline;
+}
+
+#course-goals {
+	display:none;
+}
+
+#learning-outcomes {
+	display:none;
+}
+
+#evaluation-criteria {
+	display:none;
+}

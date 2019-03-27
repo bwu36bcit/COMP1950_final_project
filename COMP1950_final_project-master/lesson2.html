@@ -1,0 +1,905 @@
+<html>
+
+<head>
+        <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+        <meta name=Generator content="Microsoft Word 14 (filtered)">
+        <title>COMP 1950 Final Proj Lesson 2</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/lesson.css">
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72">
+
+        <div class=wrapper>
+
+                <header>
+                        <a href="index.html">
+                                <img src="images/logo_bcit.png" alt="logo">
+                        </a>
+                        <h1>COMP 1950 - Web Development and Design 2</h1>
+                        <button class="menu" id="menu">
+                                <span class="button-content">
+                                        <span class="text">Menu</span>
+                                        <span class="bar"></span>
+                                </span>
+                        </button>
+                        <nav>
+                                <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="outline.html">Course Outline</a></li>
+                                        <li><a href="schedule.html">Schedule</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                        </nav>
+                </header>
+                <main>
+                        <h2>Lesson 2</h2>
+                        <a href="schedule.html">Back to Schedule</a>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Agenda</span></b></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><b><span lang=EN-CA>Charsets</span></b></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>HTML</span></b><span
+                                                lang=EN-CA>,&nbsp;<b>XHTML</b>,&nbsp;<b>HTML5</b></span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>Semantics</span></b></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>Forms</span></b><span
+                                                lang=EN-CA>,&nbsp;<b>SVG</b>,&nbsp;<b>Multimedia</b></span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>To Do</span></b></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Character Sets And Languages</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>The W3C recommends the&nbsp;</span><a
+                                        href="https://www.w3.org/International/questions/qa-choosing-encodings"><b><span
+                                                        lang=EN-CA>UTF-8
+                                                        charset</span></b></a><span lang=EN-CA>&nbsp;for web
+                                        development. It includes an impressive array of languages and special
+                                        characters, and is well supported in common devices.</span></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Assign Character Set</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>If it is not specified, a web browser will
+                                        choose the character set it thinks is most appropriate, but it is a better
+                                        practice for the developer to ensure the correct character set by applying
+                                        the&nbsp;<b>meta</b>&nbsp;tag to the&nbsp;<b>head</b>&nbsp;section of every
+                                        HTML page:</span></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>&lt;meta charset=&quot;utf-8&quot; /&gt;</span></b></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><span lang=EN-CA>Write all your text-based code
+                                                (<b>.html</b>,&nbsp;<b>.css</b>,&nbsp;<b>.js</b>,&nbsp;<b>.php</b>,
+                                                etc) in UTF-8. At development time, ensure your text editor is saving
+                                                files in this format. This setting is usually found in the application's
+                                                Preferences menu option.</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Unless your audience includes very old
+                                                browsers, you can&nbsp;</span><a
+                                                href="https://tools.oratory.com/altcodes.html"><b><span lang=EN-CA>code
+                                                                special characters</span></b></a><span
+                                                lang=EN-CA>&nbsp;directly into the
+                                                HTML (you dont need to use HTML entities for most special
+                                                characters).</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>You cannot copy-paste rich text (such as
+                                                Microsoft Word, or WordPad) into your HTML. The rich text formatting may
+                                                result in an unreadable mess.</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>An HTTP server can over-ride your charset
+                                                preferences when it generates the HTTP header. Details on how to control
+                                                this will be discussed later in this course.</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>HTML&nbsp;lang&nbsp;Attribute</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>Use the&nbsp;<b>lang=&quot;&quot;</b>&nbsp;attribute
+                                        to&nbsp;</span><a
+                                        href="https://www.w3.org/International/questions/qa-html-language-declarations"><b><span
+                                                        lang=EN-CA>declare the language in HTML</span></b></a><span
+                                        lang=EN-CA>. This
+                                        is usually applied to the&nbsp;<b>html</b>&nbsp;element. Assigning the
+                                        appropriate language code will apply to all contained content, unless
+                                        over-ridden with another&nbsp;<b>lang=&quot;&quot;</b>.</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>Use the language abbreviations from
+                                        the&nbsp;</span><a
+                                        href="http://www.loc.gov/standards/iso639-2/php/code_list.php"><b><span
+                                                        lang=EN-CA>standard ISO 639-1</span></b></a><span
+                                        lang=EN-CA>&nbsp;code set
+                                        (don't use ISO 639-2).</span></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>HTML</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>What started as a language defined by&nbsp;</span><a
+                                        href="http://www.w3.org/MarkUp/SGML/"><b><span
+                                                        lang=EN-CA>SGML</span></b></a><span
+                                        lang=EN-CA>&nbsp;<i>(Standard Generalized Markup Language)</i>, HTML is used to
+                                        mark up billions of pages, making up the bulk of the web.</span></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><span lang=EN-CA>Late 1991, Tim Berners-Lee releases the
+                                                first iteration of what would become HTML 2.0 (there was no real
+                                                1.0+)</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>HTML was a language created at the dawn
+                                                of the Web, using SGML (Standard Generalized Markup Language) as a
+                                                template</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Over the next decade, various additions,
+                                                improvements and changes are introduced</span></li>
+                                <li class=MsoNormal><a href="https://www.w3.org/TR/1999/REC-html401-19991224/"><b><span
+                                                                lang=EN-CA>HTML
+                                                                4.01</span></b></a><span lang=EN-CA>&nbsp;released in
+                                                December 1999</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Initially used for documents and a place
+                                                for the technically inclined, the web did not have the international
+                                                pervasiveness it does today</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Most developers were new to the language
+                                                and there were no real classes in it</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>People had to learn as they went along</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>A lot of early sites are poorly designed</span>
+                                </li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>HTML 4.01 template</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>The problem with the state of HTML then was
+                                        its reputation as a loose language. Poorly structured code would be rendered
+                                        differently across user agents, leading to forked code and less predictable
+                                        results.</span></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>XHTML</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>The&nbsp;</span><a
+                                        href="https://www.w3.org/TR/2002/REC-xhtml1-20020801/"><b><span lang=EN-CA>XHTML
+                                                        specification</span></b></a><span lang=EN-CA>&nbsp;was the
+                                        result of
+                                        rewriting&nbsp;</span><a
+                                        href="https://www.w3.org/TR/1999/REC-html401-19991224/"><b><span lang=EN-CA>HTML
+                                                        4.01</span></b></a><span lang=EN-CA>&nbsp;using the ruleset
+                                        derived from&nbsp;</span><a href="https://www.w3.org/XML/"><b><span
+                                                        lang=EN-CA>XML</span></b></a>
+                        </p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><span lang=EN-CA>HTML 4.01 + XML = XHTML 1.0</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>X = eXtensible</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>X = XML related</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Better, more predictable coding patterns.</span>
+                                </li>
+                                <li class=MsoNormal><span lang=EN-CA>Verifiable or &quot;well-formed&quot;
+                                                code can be produced.</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Forces a higher standard of HTML.</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Predictable behavior across user agents.</span>
+                                </li>
+                                <li class=MsoNormal><span lang=EN-CA>Porting to HTML5 is easy (if you also
+                                                observe&nbsp;<b>semantic</b>&nbsp;guidelines).</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>XHTML Rules:</span></b></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><span lang=EN-CA>All elements must be properly nested</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><span lang=EN-CA>This is not
+                                                        valid:&nbsp;<b>&lt;p&gt;&lt;b&gt;Bolded
+                                                                Text&lt;/p&gt;&lt;/b&gt;</b></span></li>
+                                        <li class=MsoNormal><span lang=EN-CA>This can be a problem with things like
+                                                        Lists &lt;ol&gt; and &lt;ul&gt;.</span></li>
+                                        <li class=MsoNormal><span lang=EN-CA>Especially when closing the List Item
+                                                        &lt;li&gt; tag that contains the &lt;ul&gt; or &lt;ol&gt;
+                                                        tag.</span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>All tags must close</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><span lang=EN-CA>Example:&nbsp;<b>&lt;p&gt;Some text
+                                                                here&lt;/p&gt;</b></span></li>
+                                        <li class=MsoNormal><span lang=EN-CA>Empty Elements are closed as
+                                                        well:&nbsp;<b>&lt;br
+                                                                /&gt;</b>&nbsp;or&nbsp;<b>&lt;img src=&quot;#&quot;
+                                                                /&gt;</b></span></li>
+                                        <li class=MsoNormal><span lang=EN-CA>An extra space is required before the
+                                                        slash to work with all browsers.</span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>All tag names must be in lower case</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;Img
+                                                                Src=&quot;some_image.gif&quot;&gt;</span></b><span
+                                                        lang=EN-CA>&nbsp;is not valid</span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>Attribute names are always in lower case</span>
+                                </li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;p
+                                                                ALIGN=&quot;center&quot;&gt;</span></b><span
+                                                        lang=EN-CA>&nbsp;should be&nbsp;<b>&lt;p
+                                                                align=&quot;center&quot;&gt;</b></span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>All attributes must be quoted</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;body
+                                                                bgcolor=black&gt;</span></b><span lang=EN-CA>&nbsp;will
+                                                        not work, you need:&nbsp;<b>&lt;body
+                                                                bgcolor=&quot;black&quot;&gt;</b></span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>Attributes cannot be minimized</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;input type=&quot;checkbox&quot;
+                                                                checked&gt;</span></b><span lang=EN-CA>&nbsp;cannot be
+                                                        used. The valid
+                                                        code is:&nbsp;<b>&lt;input type=&quot;checkbox&quot;
+                                                                checked=&quot;checked&quot; /&gt;</b></span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>Name Attribute is no longer used (except
+                                                with forms). Replace &quot;name&quot; with &quot;id&quot;.</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;img src=&quot;picture.gif&quot;
+                                                                name=&quot;myimage&quot; /&gt;</span></b><span
+                                                        lang=EN-CA>&nbsp;will not
+                                                        validate.
+                                                        Use&nbsp;<b>id=&quot;myimage&quot;</b>&nbsp;instead.</span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>Mandatory Elements: Every XHTML
+                                                document&nbsp;<b>must have</b>&nbsp;these elements:</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;html&gt;</span></b></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;head&gt;</span></b></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;title&gt;</span></b></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;body&gt;</span></b></li>
+                                        <li class=MsoNormal><span
+                                                        lang=EN-CA>The&nbsp;<b>&lt;!DOCTYPE&gt;</b>&nbsp;declaration&nbsp;<i>must</i>&nbsp;be
+                                                        there, but it is&nbsp;<i>part</i>&nbsp;of the document itself
+                                                        rather than
+                                                        an element of the document.</span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>Documents must be well-formed</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><span lang=EN-CA>The document must conform to all of the
+                                                        above rules</span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>Optional XML declaration</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><span lang=EN-CA>Not&nbsp;<i>required</i>, but good
+                                                        practice:</span></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>&lt;?xml version=&quot;1.0&quot;
+                                                                encoding=&quot;ISO-8859-1&quot;?&gt;</span></b></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>Optional Element: An XHTML document
+                                                should also declare the type and character encoding in the head section
+                                                to
+                                                ensure the server sends the correct content-type header:&nbsp;<br>
+                                                <b>&lt;meta http-equiv=&quot;Content-Type&quot;
+                                                        content=&quot;text/html&quot;
+                                                        charset=&quot;UTF-8&quot;&gt;</b></span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>XHTML 1.0 template</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>HTML5</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>As of October 28, 2014,&nbsp;</span><a
+                                        href="http://www.w3.org/TR/html5/"><b><span lang=EN-CA>HTML5 is the official
+                                                        W3C recommendation</span></b></a></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>HTML5 is more evolutionary then
+                                        revolutionary. The bulk of previous HTML elements and attributes are
+                                        maintained, with a few deprecations, and several additions.</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>Significant features include:</span></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><span lang=EN-CA>Ultra simple Doctype:&nbsp;<b>&lt;!DOCTYPE
+                                                        html&gt;</b></span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Specifies how browsers should behave with
+                                                imperfect code</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Ability to embed&nbsp;</span><a
+                                                href="https://www.w3.org/XML/"><b><span
+                                                                lang=EN-CA>XML</span></b></a><span
+                                                lang=EN-CA>,&nbsp;</span><a href="http://www.w3.org/Math/"><b><span
+                                                                lang=EN-CA>MathML</span></b></a><span
+                                                lang=EN-CA>&nbsp;or&nbsp;</span><a
+                                                href="http://www.w3.org/Graphics/SVG/"><b><span
+                                                                lang=EN-CA>SVG</span></b></a><span
+                                                lang=EN-CA>&nbsp;markup.</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Standardized Javascript API increases
+                                                client side script compatibility across browsers</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Backwards compatible - older versions of
+                                                HTML can effectively be updated by simply changing the doctype to
+                                                HTML5</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Guiding principles: Enhance semantic
+                                                coding, Support existing content, Pave the cowpaths</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>HTML 5 template</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Paving the Cowpaths</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>Common developer practices have been
+                                        simplified</span></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><span lang=EN-CA>Finally a DOCTYPE we can all remember:<br>
+                                                <b>&lt;!DOCTYPE html&gt;</b></span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Declaring the character encoding is
+                                                easier:<br>
+                                                <b>&lt;meta charset=&quot;utf-8&quot;&gt;</b></span></li>
+                                <li class=MsoNormal><span lang=EN-CA>When linking to external stylesheets
+                                                the&nbsp;<b>type</b>&nbsp;attribute is not required:<br>
+                                                <b>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;
+                                                        /&gt;</b></span></li>
+                                <li class=MsoNormal><span lang=EN-CA>When embedding CSS
+                                                the&nbsp;<b>type</b>&nbsp;attribute
+                                                is not required:<br>
+                                                <b>&lt;style&gt;&lt;/style&gt;</b></span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Including javascripts is simplified as
+                                                well (<b>type</b>&nbsp;attribute is not required)<br>
+                                                <b>&lt;script
+                                                        src=&quot;javascripts.js&quot;&gt;&lt;/script&gt;</b></span>
+                                </li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>HTML5: Enhanced Semantic Coding</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>It is crucial for all HTML content to
+                                        be&nbsp;</span><a href="https://en.wikipedia.org/wiki/Semantic_HTML"><b><span
+                                                        lang=EN-CA>semantically
+                                                        marked up</span></b></a><span lang=EN-CA>. This is how
+                                        browsers, search engines, and screen readers make sense of online
+                                        content.</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>HTML5 provides more than just adjustments
+                                        to the markup, there are new, powerfully semantic elements:</span></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"><b><span
+                                                                lang=EN-CA>&lt;section&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;is a tag
+                                                representing a document or application section. in general, if you are
+                                                planning to use a heading, start a new&nbsp;<b>section</b>.
+                                                a&nbsp;<b>section</b>&nbsp;must
+                                                contain a heading, and may contain&nbsp;<b>article</b>(s),
+                                                possibly&nbsp;<b>aside</b>s
+                                                or even sub-<b>section</b>s</span></li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"><b><span
+                                                                lang=EN-CA>&lt;article&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;is an
+                                                independent piece of content in a document (it could stand alone if
+                                                removed from the page). an&nbsp;<b>article</b>&nbsp;might be a blog
+                                                post,
+                                                forum thread, news story, collection of product information, etc</span>
+                                </li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside"><b><span
+                                                                lang=EN-CA>&lt;aside&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;is for
+                                                content &quot;only slightly&quot; related to the main page
+                                                content.&nbsp;<b>aside</b>s
+                                                fill the role of a sidebar. if the content could be removed without
+                                                reducing the meaning of the main content of the HTML document, then use
+                                                an&nbsp;<b>aside</b></span></li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"><b><span
+                                                                lang=EN-CA>&lt;header&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;and&nbsp;</span><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"><b><span
+                                                                lang=EN-CA>&lt;footer&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;are for the
+                                                header or footer of a page</span></li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"><b><span
+                                                                lang=EN-CA>&lt;nav&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;represents an
+                                                area for navigation</span></li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"><b><span
+                                                                lang=EN-CA>&lt;main&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;used for
+                                                containing content that is focused on the central topic of the page.
+                                                this
+                                                content is usually unique to the page, and not shared by other pages
+                                                (main
+                                                will usually NOT contain navigations, footers, sidebars, etc)</span>
+                                </li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"><b><span
+                                                                lang=EN-CA>&lt;figure&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;will likely
+                                                contain an&nbsp;<b>img</b>&nbsp;or graphic. self-contained content
+                                                (could
+                                                usually be removed from the page and stand on its own). allows for
+                                                captioning of embedded content like an image graphic or video. if you
+                                                want
+                                                to associate a caption, add a&nbsp;<b>figcaption</b>&nbsp;child</span>
+                                </li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"><b><span
+                                                                lang=EN-CA>&lt;figcaption&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;used as
+                                                first or last child of&nbsp;<b>figure</b>&nbsp;to define the caption or
+                                                legend for a figure</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><span lang=EN-CA>These represent some big changes in HTML,
+                                        allowing for more flexibility in coding and specifying content. Many of these
+                                        will replace and reduce the need for many&nbsp;<b>div</b>&nbsp;tags. eg:
+                                        instead of the typical&nbsp;<b>&lt;div id=&quot;header&quot;&gt;</b>,
+                                        use&nbsp;<b>&lt;header&gt;</b>.</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>Having trouble deciding which tag to use
+                                        for what content? Try this&nbsp;</span><a
+                                        href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf"><b><span
+                                                        lang=EN-CA>HTML5
+                                                        flowchart</span></b></a><span lang=EN-CA>.</span></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>HTML5 Semantic Alterations</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>HTML5 also brings a few notable semantic
+                                        alterations to older tags:</span></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><b><span
+                                                                lang=EN-CA>&lt;a&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;though still an
+                                                inline tag, it is now ok to nest multiple block level tags (headings,
+                                                paragraphs etc) inside an anchor tag</span></li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en/docs/Web/HTML/Element/small"><b><span
+                                                                lang=EN-CA>&lt;small&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;no longer a
+                                                'physical' tag for smaller sized print, it now has semantic value:
+                                                meaning
+                                                'small print', i.e. 'legalese'. the&nbsp;<b>big</b>&nbsp;element has
+                                                been
+                                                deprecated</span></li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b"><b><span
+                                                                lang=EN-CA>&lt;b&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;no longer means
+                                                'render bold'. now it means the text is 'stylisticly offset from the
+                                                normal text', without conveying any extra importance. to convey extra
+                                                importance, use&nbsp;</span><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong"><b><span
+                                                                lang=EN-CA>&lt;strong&gt;</span></b></a></li>
+                                <li class=MsoNormal><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i"><b><span
+                                                                lang=EN-CA>&lt;i&gt;</span></b></a><span
+                                                lang=EN-CA>&nbsp;now means the
+                                                text is 'in an alternate voice or mood', without conveying any extra
+                                                emphasis. to convey extra emphasis, use&nbsp;</span><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em"><b><span
+                                                                lang=EN-CA>&lt;em&gt;</span></b></a></li>
+                                <li class=MsoNormal><span lang=EN-CA>Deprecated tags:&nbsp;<b>&lt;big&gt;,
+                                                        &lt;font&gt;, &lt;strike&gt;</b>, and a few more. Developers
+                                                should use
+                                                CSS instead of these deprecated tags.</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>Deprecated attributes:&nbsp;<b>align,
+                                                        bgcolor, border, height, size, type, width</b>&nbsp;and more.
+                                                Developers
+                                                should use CSS instead of these deprecated attributes.</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>HTML5 Content Models</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>Pre-HTML5, there were basically two
+                                        categories of tags: inline and block. HTML5 intoduces a more nuanced set of
+                                        categories that allow for greater semantic sectioning of content. The content
+                                        model will help the browser to determine the semantics of your content.</span>
+                        </p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Content Models</span></b></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><span lang=EN-CA>text-level content: most inline tags</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>grouping content: most block tags</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>replaced content: all the form widgets
+                                                and related tags</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>embedded content: video, audio, canvas</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>sectioning content: new structural,
+                                                semantic options</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Sectioning Content</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>The&nbsp;</span><a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"><b><span
+                                                        lang=EN-CA>&lt;section&gt;</span></b></a><span
+                                        lang=EN-CA>&nbsp;tag can be used
+                                        to semantically group content. It can remove ambiguity when a page is being
+                                        processed by the browser, a screen reader, or search engine.</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>For example, imagine you have created the
+                                        following code:</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>Since content that follows a heading is
+                                        presumed to be associated with that heading, the code above carries plenty of
+                                        semantic value already. But, if the&nbsp;<b>small</b>&nbsp;tag's content is
+                                        intended to apply to all cities, a browser has no way of knowing that. It will
+                                        instead assume the&nbsp;<b>small</b>&nbsp;tag is associated with the preceding
+                                        heading (<b>&lt;h3&gt;Tokyo&lt;/h3&gt;</b>)</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>Use the&nbsp;<b>section</b>&nbsp;tag to
+                                        explicitly demarcate the start and end of the related content:</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>This new sectioning will inform the browser
+                                        that the&nbsp;<b>small</b>&nbsp;is associated with the&nbsp;<b>h1</b></span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>In HTML5, each piece of sectioned content
+                                        has its own self-contained outline. This means you wont need to worry as much
+                                        about which level heading tag to use. You can use an&nbsp;<b>h1</b>&nbsp;inside
+                                        a section and it will be treated as the heading of the section, and have lesser
+                                        semantic impact than an&nbsp;<b>h1</b>&nbsp;that is at a higher level.</span>
+                        </p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Forms</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>HTML 5 adds several new&nbsp;</span><a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><b><span
+                                                        lang=EN-CA>form
+                                                        attributes</span></b></a><span lang=EN-CA>&nbsp;that prove
+                                        quite useful, even if some are as yet poorly supported.</span></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><b><span lang=EN-CA>placeholder=&quot;value&quot;</span></b><span
+                                                lang=EN-CA>:
+                                                prepopulates field with data</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>autofocus=&quot;autofocus&quot;</span></b><span
+                                                lang=EN-CA>:
+                                                sets
+                                                the input to have cursor focus</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>required=&quot;required&quot;</span></b><span
+                                                lang=EN-CA>:
+                                                ensures
+                                                field is filled in before submission</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>There are also several
+                                                new&nbsp;<b>&lt;input&gt;</b>&nbsp;type
+                                                attribute variants:</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><b><span lang=EN-CA>type=&quot;email&quot;</span></b><span
+                                                        lang=EN-CA>: checkes
+                                                        for
+                                                        the pattern of emails</span></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>type=&quot;url&quot;</span></b><span
+                                                        lang=EN-CA>: web
+                                                        addesses</span></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>type=&quot;date&quot;</span></b><span
+                                                        lang=EN-CA>: calendar
+                                                        popup</span></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>type=&quot;tel&quot;</span></b><span
+                                                        lang=EN-CA>: telephone
+                                                        numbers</span></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>type=&quot;search&quot;</span></b><span
+                                                        lang=EN-CA>: formats
+                                                        text input as search input</span></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>type=&quot;color&quot;</span></b><span
+                                                        lang=EN-CA>: color
+                                                        picker
+                                                        popup</span></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>type=&quot;range&quot;</span></b><span
+                                                        lang=EN-CA>: sliding
+                                                        scales</span></li>
+                                        <li class=MsoNormal><b><span lang=EN-CA>type=&quot;pattern&quot;</span></b><span
+                                                        lang=EN-CA>:
+                                                        regular
+                                                        expression pattern matching</span></li>
+                                </ul>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Scaleable Vector Graphics</span></b></p>
+
+                        <p class=MsoNormal><a href="http://www.w3.org/Graphics/SVG/"><b><span lang=EN-CA>Scaleable
+                                                        Vector Graphics
+                                                        (SVG)</span></b></a><span lang=EN-CA>&nbsp;can
+                                        be embedded into HTML5 documents. SVG are 100% scalable without the pixelated
+                                        effect that scaled raster images can suffer from. SVG file data is stored as
+                                        text, so they are much smaller in file size than a raster equivalent.</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>You can use SVG graphics with the&nbsp;<b>img</b>&nbsp;tag,
+                                        just as with raster graphics. You can also use .svg as a
+                                        CSS&nbsp;<b>background-image</b>.</span>
+                        </p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>&lt;img src=&quot;images/logo.svg&quot;
+                                                alt=&quot;COMP 1950 logo&quot; /&gt;</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>The&nbsp;<b>png</b>&nbsp;on the left is
+                                        26KB. The&nbsp;<b>.svg</b>&nbsp;on the right is only 4KB.</span></p>
+
+                        <!-- <p class=MsoNormal><img border=0 width=233 height=140 id="Picture 2" src="lesson2_files/image001.jpg"
+                alt="http://bcitcomp.ca/images/comp1950_logo.png"><img width=32 height=32
+                src="lesson2_files/image002.png" alt="http://bcitcomp.ca/images/comp1950_logo.svg"></p> -->
+
+                        <IMG SRC="images/comp1950_logo.png" NAME="Picture 1">
+                        <IMG SRC="images/comp1950_logo.svg" NAME="Picture 2">
+
+                        <p class=MsoNormal><span lang=EN-CA>Alternatively, you can use SVG code
+                                        'inline' with the&nbsp;<b>svg</b>&nbsp;tag. The advantage of doing this is it
+                                        will result in one less request/response between the client and the server. The
+                                        disadvantage to inline SVG is that it adds considerable clutter to your
+                                        your&nbsp;<b>.html</b>&nbsp;code. Just copy the source code from
+                                        your&nbsp;<b>.svg</b>&nbsp;file
+                                        and paste it directly into your&nbsp;<b>.html</b>!</span></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>&lt;svg viewBox=&quot;0 0 55
+                                                28&quot;&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>            &lt;!-- svg code goes
+                                                here... sometimes there is a LOT of code here! --&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>&lt;/svg&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>SVG Tools</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>Use an SVG application to help you create
+                                        and manipulate your SVG code.</span></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><a href="http://www.adobe.com/ca/products/illustrator.html"><b><span
+                                                                lang=EN-CA>Adobe
+                                                                Illustrator</span></b></a></li>
+                                <li class=MsoNormal><a href="https://inkscape.org/en/"><b><span
+                                                                lang=EN-CA>Inkscape</span></b></a><span
+                                                lang=EN-CA>&nbsp;(Open source, Windows/Mac/Linux)</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Multimedia</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>HTML5's more responsive multimedia features
+                                        have made it easier to provide appropriately formatted video and audio to the
+                                        client.</span></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Audio</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>The&nbsp;</span><a
+                                        href="https://developer.mozilla.org/en/docs/Web/HTML/Element/audio"><b><span
+                                                        lang=EN-CA>audio</span></b></a><span lang=EN-CA>&nbsp;element
+                                        provides a way to
+                                        offer many audio formats to the client, allowing the browser to choose the one
+                                        most suitable.</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>The most common audio formats for the web
+                                        are:&nbsp;<b>audio/mp3</b>,&nbsp;<b>audio/mpeg</b>&nbsp;and&nbsp;<b>audio/ogg</b>.</span>
+                        </p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Each audio tag may contain:</span></b></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><b><span lang=EN-CA>source</span></b><span lang=EN-CA>&nbsp;tags
+                                                as children of the&nbsp;<b>audio</b>&nbsp;tag, one for each audio format
+                                                available. Each&nbsp;<b>source</b>&nbsp;must have
+                                                a&nbsp;<b>src</b>&nbsp;(path
+                                                to audio file) and&nbsp;<b>type</b>&nbsp;(audio file MIME type)</span>
+                                </li>
+                                <li class=MsoNormal><b><span lang=EN-CA>controls=&quot;controls&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;give
+                                                the user control over the audio *important for
+                                                usability*</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>loop=&quot;loop&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;loop
+                                                audio
+                                                playback</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>preload=&quot;none&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;dont
+                                                load
+                                                the audio until the user clicks
+                                                'play',&nbsp;<b>preload=&quot;metadata&quot;</b>&nbsp;preloads
+                                                the clip duration statistic
+                                                only,&nbsp;<b>preload=&quot;auto&quot;</b>&nbsp;loads
+                                                the audio clip to the client before they click 'play'</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>autoplay=&quot;autoplay&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;begin
+                                                playing audio as soon as page is loaded *NOT very
+                                                user friendly*</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>you may also wish to include a direct
+                                                link for your users to download the file</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>&lt;audio
+                                                controls=&quot;controls&quot;&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>            &lt;source
+                                                src=&quot;media/house-a-square.mpg&quot; type=&quot;audio/mpeg&quot;
+                                                /&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>            &lt;source
+                                                src=&quot;media/house-a-square.mp3&quot; type=&quot;audio/mp3&quot;
+                                                /&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>            &lt;source
+                                                src=&quot;media/house-a-square.ogg&quot; type=&quot;audio/ogg&quot;
+                                                /&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>&lt;/audio&gt;</span></b></p>
+
+                        <audio controls="controls">
+                                <source src="media/house-a-square.mpg" type="audio/mpeg" />
+                                <source src="media/house-a-square.mp3" type="audio/mp3" />
+                                <source src="media/house-a-square.ogg" type="audio/ogg" />
+                        </audio>
+
+                        <p class=MsoNormal><a href="http://bcitcomp.ca/1950/media/house-a-square.mp3"><b><span
+                                                        lang=EN-CA>Download
+                                                        the
+                                                        audio</span></b></a></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Video</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>The&nbsp;</span><a
+                                        href="https://developer.mozilla.org/en/docs/Web/HTML/Element/video"><b><span
+                                                        lang=EN-CA>video</span></b></a><span lang=EN-CA>&nbsp;element
+                                        provides a way to
+                                        offer many video formats to the client, allowing the browser to choose the one
+                                        most suitable.</span></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>The most common video formats for the web
+                                        are:&nbsp;<b>video/mp4</b>,&nbsp;<b>video/ogg</b>&nbsp;and&nbsp;<b>video/webm</b>.</span>
+                        </p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>Each video tag may contain:</span></b></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><b><span lang=EN-CA>source</span></b><span lang=EN-CA>&nbsp;tags
+                                                as children of the&nbsp;<b>video</b>&nbsp;tag, one for each video format
+                                                available. Each&nbsp;<b>source</b>&nbsp;must have
+                                                a&nbsp;<b>src</b>&nbsp;(path
+                                                to video file) and&nbsp;<b>type</b>&nbsp;(video file MIME type)</span>
+                                </li>
+                                <li class=MsoNormal><b><span lang=EN-CA>controls=&quot;controls&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;give
+                                                the user control over the video playback *important
+                                                for usability*</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>width=&quot;250&quot;
+                                                        height=&quot;100&quot;</span></b><span lang=EN-CA>&nbsp;set the
+                                                size of
+                                                the video (use CSS instead. absolute values only, no percentages)</span>
+                                </li>
+                                <li class=MsoNormal><b><span lang=EN-CA>poster=&quot;image.jpg&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;display a static image when the video is not
+                                                playing</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>loop=&quot;loop&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;loop
+                                                playback</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>muted=&quot;muted&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;begin
+                                                with
+                                                audio silenced</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>preload=&quot;none&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;dont
+                                                load
+                                                the video until the user clicks
+                                                'play',&nbsp;<b>preload=&quot;metadata&quot;</b>&nbsp;preloads
+                                                the clip duration statistic
+                                                only,&nbsp;<b>preload=&quot;auto&quot;</b>&nbsp;loads
+                                                the clip to the client before they click 'play'</span></li>
+                                <li class=MsoNormal><b><span lang=EN-CA>autoplay=&quot;autoplay&quot;</span></b><span
+                                                lang=EN-CA>&nbsp;begin
+                                                playing video as soon as page is loaded *NOT very
+                                                user friendly*</span></li>
+                                <li class=MsoNormal><span lang=EN-CA>you may also wish to include a direct
+                                                link for your users to download the file</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>&lt;video             preload=&quot;none&quot;
+                                        </span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>            controls=&quot;controls&quot;
+                                        </span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>           
+                                                poster=&quot;media/poster-bear-in-water.jpg&quot;&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>            </span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>            &lt;source
+                                                src=&quot;media/bear-in-water.webm&quot; type=&quot;video/webm&quot;
+                                                /&gt; </span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>            &lt;source
+                                                src=&quot;media/bear-in-water.mp4&quot; type=&quot;video/mp4&quot;
+                                                /&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>            &lt;source
+                                                src=&quot;media/bear-in-water.ogg&quot; type=&quot;video/ogg&quot;
+                                                /&gt;</span></b></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>&lt;/video&gt;         </span></b></p>
+
+                        <video preload="none" controls="controls" poster="images/poster-bear-in-water.jpg">
+                                <source src="media/bear-in-water.webm" type="video/webm" />
+                                <source src="media/bear-in-water.mp4" type="video/mp4" />
+                                <source src="media/bear-in-water.ogg" type="video/ogg" />
+                        </video>
+
+                        <p class=MsoNormal><a href="http://bcitcomp.ca/1950/media/bear-in-water.mp4"><b><span
+                                                        lang=EN-CA>Download
+                                                        the
+                                                        video</span></b></a></p>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>HTML5 Today</span></b></p>
+
+                        <p class=MsoNormal><span lang=EN-CA>User agent browsers will have varying
+                                        support for the HTML5 specification.</span></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><a href="https://caniuse.com/"><b><span
+                                                                lang=EN-CA>caniuse.com</span></b></a><span
+                                                lang=EN-CA>&nbsp;is an excellent source for compatibility testing</span>
+                                </li>
+                                <li class=MsoNormal><span lang=EN-CA>Try the&nbsp;</span><a
+                                                href="http://html5test.com/"><b><span
+                                                                lang=EN-CA>HTML5Test</span></b></a><span
+                                                lang=EN-CA>&nbsp;to test a specific
+                                                browser.</span>
+                                </li>
+                                <li class=MsoNormal><span lang=EN-CA>To ensure early versions of Internet
+                                                Explorer will render HTML5 tags correctly, you can add the HTML5
+                                                shiv:</span></li>
+                                <ul style='margin-top:0in' type=circle>
+                                        <li class=MsoNormal><b><span
+                                                                lang=EN-CA>&lt;script&gt;document.createElement(&quot;article&quot;);&lt;/script&gt;</span></b>
+                                        </li>
+                                        <li class=MsoNormal><span lang=EN-CA>This creates an element
+                                                        called&nbsp;<b>&lt;article&gt;</b>&nbsp;which
+                                                        the browser (IE, in this case) can understand and style
+                                                        appropriately</span></li>
+                                </ul>
+                                <li class=MsoNormal><span lang=EN-CA>Creating an entry for every element can
+                                                get a bit heavy, so you can use the&nbsp;</span><a
+                                                href="https://github.com/aFarkas/html5shiv"><b><span
+                                                                lang=EN-CA>HTML5shiv</span></b></a><span
+                                                lang=EN-CA>&nbsp;script written by&nbsp;</span><a
+                                                href="http://remysharp.com/"><b><span lang=EN-CA>Remy
+                                                                Sharp</span></b></a><span lang=EN-CA>. Insert a
+                                                coded-comment that will
+                                                apply the shiv ONLY with IE
+                                                browsers earlier than version 9:</span></li>
+                                <!-- <li class=MsoNormal><b><span lang=EN-CA>&lt;!--[if lt IE 9]&gt;</span></b></li>
+            <li class=MsoNormal><b><span lang=EN-CA>            &lt;script
+                        src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</span></b>
+            </li> -->
+
+                                <br />
+                                <strong>&lt;!--[if lt IE 9]></strong><br />
+                                <strong><span class="tabbed">&lt;script
+                                                src="http://html5shiv.googlecode.com/svn/trunk/html5.js">&lt;/script></span></strong><br />
+                                <strong>&lt;![endif]--></strong></li>
+
+                        </ul>
+
+                        <!-- <p class=MsoNormal><b><span lang=EN-CA>&lt;![endif]--&gt;</span></b></p> -->
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><span lang=EN-CA>Since HTML5 understands both HTML4 and
+                                                XHTML tags, converting an older HTML file into HTML5 is simply a matter
+                                                of
+                                                updating the DOCTYPE and meta tag for charset.</span></li>
+                        </ul>
+
+                        <p class=MsoNormal><b><span lang=EN-CA>To Do</span></b></p>
+
+                        <ul style='margin-top:0in' type=disc>
+                                <li class=MsoNormal><span lang=EN-CA>Download, review, and complete the
+                                                homework assignment from&nbsp;</span><a
+                                                href="https://learn.bcit.ca/"><b><span lang=EN-CA>D2L</span></b></a>
+                                </li>
+                                <li class=MsoNormal><span lang=EN-CA>Review the&nbsp;</span><a
+                                                href="http://bcitcomp.ca/1950/lecture/02/#semantics"><b><span
+                                                                lang=EN-CA>HTML5
+                                                                semantic tags</span></b></a><span lang=EN-CA>, know how
+                                                and when to use
+                                                them to maxmize the semantic strucure of your HTML</span></li>
+                        </ul>
+
+                        <a href="#">Back to top</a>
+                        <p class=MsoNormal><span lang=EN-CA>&nbsp;</span></p>
+
+                        <p class=MsoNormal>&nbsp;</p>
+
+                </main>
+                <footer>
+                        <p>BCIT COMP1950</p>
+                        <p>&copy 2019 Brian Q. B. Wu A00635050, Richard Feng A01030372</p>
+                </footer>
+        </div><!-- end wrapper -->
+        <script src="scripts/script-menu-dropdown.js"></script>
+</body>
+
+</html>
