@@ -1,0 +1,67 @@
+@media only screen and (max-width: 320px) {
+	body {
+		background-image: none;
+	}
+
+	/* the BCIT logo */
+	header a:first-child {
+		margin: 0;
+		padding: 0;
+	}
+
+	header h1 {
+		margin: 0;
+
+		font-size: 0.9em;
+	}
+
+	.menu {
+		margin: 0;
+		padding: 0;
+
+		transform: translateX(-3vh);
+	}
+
+	/* Mobile Navigation Styles */
+	button.menu {
+		transform: translateX(0.05vh);
+	}
+
+	button.menu .button-content {
+		height: 25px;
+	}
+
+	button.menu .bar {
+		height: 2px;
+	}
+
+	button.menu .bar:before {
+		height: 2px;
+	}
+
+	button.menu .bar:after {
+		height: 2px;
+	}
+
+	nav a {
+		line-height: 22px;
+		font-size: 15px;
+	}
+
+	.show nav {
+		height: 100px;
+	}
+	/* End - Mobile Navigation Styles */
+
+	footer {
+		margin: 0;
+		padding: 0;
+
+		font-size: 0.8em;
+	}
+
+	// small footer can't fit all text, get rid of <p>BCIT COMP1950</p>
+	footer p:first-child {
+		display: none;
+	}
+}

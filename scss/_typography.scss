@@ -3,34 +3,41 @@
 
 /* Box Sizing Reset */
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
 /* Images  - Max-Width Reset */
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 body {
-    background-color: #6C6C6C;
-    background-image: url(../images/BCIT-background.jpg);
-    // background-repeat: repeat-y;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-	  background-position-x: center;
-    margin: 0;
-    font-family: $body-font;
+	background-color: #6c6c6c;
+	background-image: url(../images/BCIT-background_1920.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position-x: center;
+	margin: 0;
+	font-family: $body-font;
 }
 
-h1, h2, h3, h4, h5, nav a {
-    font-family: $heading-font;
+h1,
+h2,
+h3,
+h4,
+h5,
+nav a {
+	font-family: $heading-font;
 }
 
 .wrapper {
-  max-width: 1920px;
-  margin: 0 auto; 
+	max-width: 1920px;
+	min-width: 320px;
+	margin: 0 auto;
 }
