@@ -1,3 +1,16 @@
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 95%; }
+
+article {
+  border-radius: 10px; }
+
+article h1 {
+  text-align: center;
+  background-color: transparent; }
+
 .outline-wrapper {
   padding-top: 50px;
   padding-bottom: 50px;

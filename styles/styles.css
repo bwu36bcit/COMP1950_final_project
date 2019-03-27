@@ -140,6 +140,11 @@ footer {
 .contact-form input {
   max-width: 100%; }
 
+main h1 {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px; }
+
 .schedule-wrapper {
   margin: auto;
   width: 70%;
@@ -171,6 +176,19 @@ footer {
     width: 90%;
     grid-template-columns: 1fr;
     grid-template-rows: auto; } }
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 95%; }
+
+article {
+  border-radius: 10px; }
+
+article h1 {
+  text-align: center;
+  background-color: transparent; }
+
 .outline-wrapper {
   padding-top: 50px;
   padding-bottom: 50px;

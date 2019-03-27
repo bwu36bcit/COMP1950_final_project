@@ -1,3 +1,19 @@
+main {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	width: 95%;
+}
+
+article {
+	border-radius: 10px;
+}
+
+article h1 {
+	text-align: center;
+	background-color: transparent;
+}
+
 .outline-wrapper {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -16,18 +32,18 @@
 }
 
 .outline-wrapper button:hover {
-	color: rgb(50,70,200);
+	color: rgb(50, 70, 200);
 	text-decoration: underline;
 }
 
 #course-goals {
-	display:none;
+	display: none;
 }
 
 #learning-outcomes {
-	display:none;
+	display: none;
 }
 
 #evaluation-criteria {
-	display:none;
+	display: none;
 }
