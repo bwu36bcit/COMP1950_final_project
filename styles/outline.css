@@ -17,7 +17,8 @@ article h1 {
   margin: auto;
   margin-bottom: 70px;
   width: 70%;
-  max-width: 1200px; }
+  max-width: 1200px;
+  line-height: 1.4; }
 
 .outline-wrapper td {
   padding: 10px; }
