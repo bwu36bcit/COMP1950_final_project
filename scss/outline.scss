@@ -11,7 +11,6 @@ article {
 
 article h1 {
 	text-align: center;
-	background-color: transparent;
 }
 
 .outline-wrapper {
@@ -31,6 +30,9 @@ article h1 {
 .outline-wrapper button {
 	background: none;
 	border: none;
+	font-family: 'Gill Sans';
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .outline-wrapper button:hover {

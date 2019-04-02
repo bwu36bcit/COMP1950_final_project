@@ -8,8 +8,7 @@ article {
   border-radius: 10px; }
 
 article h1 {
-  text-align: center;
-  background-color: transparent; }
+  text-align: center; }
 
 .outline-wrapper {
   padding-top: 50px;
@@ -25,7 +24,10 @@ article h1 {
 
 .outline-wrapper button {
   background: none;
-  border: none; }
+  border: none;
+  font-family: 'Gill Sans';
+  font-size: 20px;
+  font-weight: bold; }
 
 .outline-wrapper button:hover {
   color: #3246c8;
