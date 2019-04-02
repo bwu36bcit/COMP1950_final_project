@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACA,kBAAkB;AAElB,QAAS;EACL,gBAAgB,EAAE,wBAAwB;EAC1C,gBAAgB,EAAE,IAAI;;AAG1B,aAAc;EACV,OAAO,EAAE,OAAO",
+"mappings": "AACA,kBAAkB;AAOlB,aAAc;EACV,gBAAgB,EAAE,wBAAwB;EAC1C,gBAAgB,EAAE,IAAI;EAGtB,YAAY,EAAE,KAAK;EACnB,aAAa,EAAE,KAAK",
 "sources": ["../scss/lesson.scss"],
 "names": [],
 "file": "lesson.css"

@@ -1,11 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
-.wrapper {
-    background-color: rgba(255, 255, 255, 0.8); 
-    background-image: none;
-}
+// .wrapper {
+//     background-color: rgba(255, 255, 255, 0.8); 
+//     background-image: none;
+// }
 
 .wrapper main {
-    padding: 0 3vmin;
+    background-color: rgba(255, 255, 255, 0.8); 
+    background-image: none;
+
+    // padding: 0 3vmin;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
 }
